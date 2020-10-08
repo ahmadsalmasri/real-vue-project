@@ -16,3 +16,9 @@ export default {
   name: "WelcomeMessage"
 };
 </script>
+
+<style scoped>
+h4 {
+  color: #42b983;
+}
+</style>
