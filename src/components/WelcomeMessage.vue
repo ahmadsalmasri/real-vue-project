@@ -1,3 +1,18 @@
 <template>
-  <div id="app"></div>
+  <div id="welcome-message">
+    <h3>welcome To Vue Js Course</h3>
+    <h4>Hello Mr. Ahmad</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta
+      perspiciatis accusamus, ipsa nisi mollitia dolore facere autem pariatur
+      iusto, voluptatibus omnis accusantium illum fugiat consequuntur libero ut
+      quo et.
+    </p>
+  </div>
 </template>
+
+<script>
+export default {
+  name: "WelcomeMessage"
+};
+</script>
