@@ -10,7 +10,7 @@
 import WelcomeMessage from "@/components/WelcomeMessage.vue";
 
 export default {
-  name: "about",
+  name: "about", // name of page
   components: {
     WelcomeMessage
   }
