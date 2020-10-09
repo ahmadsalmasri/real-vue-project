@@ -1,6 +1,6 @@
 <template>
   <div class="money">
-    <h2>This is an Money Page</h2><hr />
+    <h2>{{ pageDescreption }}</h2><hr />
     <div class="form-group row">
        <label class="col-2">Hours</label>
        <input type="text" v-model="hours" />
@@ -19,6 +19,12 @@
 
 <script>
 export default {
+        data: function() {
+        return {
+            pageName: "Money",
+            pageDescreption: "This is an Money page",
+        }
+    },
   name: "Money"
 };
 </script> 
