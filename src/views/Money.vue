@@ -1,6 +1,10 @@
 <template>
   <div class="money">
     <h2>{{ pageDescreption }}</h2><hr />
+
+    <div class="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div>
     <div class="form-group row">
        <label class="col-2">Hours</label>
        <input type="text" v-model="hours" />
