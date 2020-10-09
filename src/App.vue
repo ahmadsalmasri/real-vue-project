@@ -29,8 +29,9 @@ export default {
   padding: 30px;
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
+    font-weight: normal;
+    color: #c4b4db;
+    text-decoration: none;
 
     &.router-link-exact-active {
       color: #42b983;
