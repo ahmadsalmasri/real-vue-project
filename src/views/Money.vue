@@ -3,20 +3,36 @@
     <h2>{{ pageDescreption }}</h2>
     <hr />
 
-    <div class="alert alert-primary" role="alert">
-      This is a primary alert—check it out!
-    </div>
-    <div class="form-group row">
-      <label class="col-2">Hours</label>
-      <input type="text" v-model="hours" />
-    </div>
-    <div class="form-group row">
-      <label class="col-2">Minutes</label>
-      <input type="text" v-model="minutes" />
-    </div>
-    <div class="form-group row">
-      <label class="col-2">Seconds</label>
-      <input type="text" v-model="seconds" />
+    <div class="alert alert-primary" role="alert" v-text="alertText"></div>
+
+    <div class="col-md-8">
+      <div class="form-group row">
+        <label for="hours" :class="labelStyle">Hours</label>
+        <input
+          type="text"
+          v-model="hours"
+          class="col-4 form-control"
+          :onkeypress="number"
+        />
+      </div>
+      <div class="form-group row">
+        <label for="minutes" :class="labelStyle">Minutes</label>
+        <input
+          type="text"
+          v-model="minutes"
+          class="col-4 form-control"
+          :onkeypress="number"
+        />
+      </div>
+      <div class="form-group row">
+        <label for="seconds" :class="labelStyle">Seconds</label>
+        <input
+          type="text"
+          v-model="seconds"
+          class="col-4 form-control"
+          :onkeypress="number"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -27,6 +43,10 @@ export default {
     return {
       pageName: "Money",
       pageDescreption: "This is an Money page",
+      alertText: "Calculate the Time",
+      labelStyle: "col-2 text-left pt-1 text-dark font-weight-bold",
+      number:
+        "return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 46",
       hours: 0,
       minutes: 0,
       seconds: 0
