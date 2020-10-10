@@ -2,7 +2,7 @@
   <div class="about">
     <h2>{{ pageDescreption }}</h2>
     <hr />
-    <WelcomeMessage />
+    <welcome-message />
   </div>
 </template>
 
