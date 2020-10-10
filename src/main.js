@@ -12,6 +12,11 @@ Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false;
 
+// global Filter
+Vue.filter('upperCase', function (value) {
+    return value.toUpperCase();
+});
+
 new Vue({
     router,
     store,

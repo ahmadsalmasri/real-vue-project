@@ -4,7 +4,7 @@
       <span class="post-views badge badge-primary" title="Views">{{
         post.views
       }}</span>
-      <h3 class="post-title" title="Title">{{ post.title }}</h3>
+      <h3 class="post-title" title="Title">{{ post.title | upperCase }}</h3>
       <span class="post-date" title="Date">{{ post.date }}</span>
       <p class="post-body">
         {{ post.contant }}
