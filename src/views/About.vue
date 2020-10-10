@@ -1,6 +1,7 @@
 <template>
   <div class="about">
-    <h2>{{ pageDescreption }}</h2><hr />
+    <h2>{{ pageDescreption }}</h2>
+    <hr />
     <WelcomeMessage />
   </div>
 </template>
@@ -10,12 +11,12 @@
 import WelcomeMessage from "@/components/WelcomeMessage.vue";
 
 export default {
-    data: function() {
-        return {
-            pageName: "About",
-            pageDescreption: "This is an about page",
-        }
-    },
+  data: function() {
+    return {
+      pageName: "About",
+      pageDescreption: "This is an About page"
+    };
+  },
   name: "about", // name of page
   components: {
     WelcomeMessage
