@@ -5,6 +5,7 @@ import About from "../views/About.vue";
 import Help from "../views/Help.vue";
 import Money from "../views/Money.vue";
 import Blog from "../views/Blog.vue";
+import Time from "../views/Time.vue";
 
 Vue.use(VueRouter);
 
@@ -38,6 +39,11 @@ const routes = [
         path: "/blog",
         name: "Blog",
         component: Blog
+    },
+    {
+        path: "/time",
+        name: "Time",
+        component: Time
     }
 ];
 
