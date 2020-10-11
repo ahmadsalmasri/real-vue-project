@@ -1,6 +1,7 @@
 <template>
   <div class="about">
-    <h2>{{ pageDescreption }}</h2>
+    <img alt="Vue logo" src="../assets/about.png" />
+    <!-- <h2>{{ pageDescreption }}</h2> -->
     <hr />
     <welcome-message />
   </div>

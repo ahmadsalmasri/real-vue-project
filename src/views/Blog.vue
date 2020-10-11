@@ -1,6 +1,7 @@
 <template>
   <div class="blog">
-    <h2>{{ pageDescreption }}</h2>
+    <img alt="Vue logo" src="../assets/blog.png" />
+    <!-- <h2>{{ pageDescreption }}</h2> -->
     <hr />
 
     <div class="alert alert-success" role="alert" v-text="alertTitel"></div>
@@ -22,6 +23,7 @@
               v-model="currentPage"
               :total-rows="rows"
               :per-page="perPage"
+              pills
               aria-controls="PostList"
             ></b-pagination>
           </div>
@@ -63,3 +65,9 @@ export default {
   }
 };
 </script> 
+
+<style>
+.pagination li button:focus {
+  box-shadow: none;
+}
+</style>

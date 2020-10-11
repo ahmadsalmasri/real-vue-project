@@ -1,6 +1,7 @@
 <template>
   <div class="money">
-    <h2>{{ pageDescreption }}</h2>
+    <img alt="Vue logo" src="../assets/money.png" />
+    <!-- <h2>{{ pageDescreption }}</h2> -->
     <hr />
 
     <div class="alert alert-primary" role="alert" v-text="alertText"></div>
